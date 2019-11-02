@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modes"
+    android:background="@drawable/waterbackground"
+    >
+
+
+    <ImageButton
+        android:id="@+id/pot"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eco"
+        android:background="#0000"
+        android:src="@drawable/pot"
+        android:contentDescription="@string/descr"/>
+
+    <ImageButton
+        android:id="@+id/glass"
+        android:layout_width="wrap_content"
+        android:layout_height="161dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="97dp"
+        android:background="#0000"
+        android:contentDescription="@string/descr"
+        android:src="@drawable/drink"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:src="@drawable/eco"
+        android:contentDescription="@string/descr" />
+
+    <ImageButton
+        android:id="@+id/fast"
+        android:layout_width="wrap_content"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="#0000"
+        android:src="@drawable/fastresize"
+        android:contentDescription="@string/descr" />
+
+    <TextView
+        android:id="@+id/textEco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pot"
+        android:layout_centerHorizontal="true"
+        android:text="@string/economy_mode"
+
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textGlass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pot"
+        android:layout_marginEnd="16dp"
+        android:text="@string/sensitive_wash"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textPot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pot"
+        android:layout_marginStart="16dp"
+        android:text="@string/durable_wash"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-55dp"
+        android:text="@string/fast_wash"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
