@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterbackground"
+    tools:context=".Timer">
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        style="@android:style/Widget.Material.Light.TimePicker"
+        android:layout_width="283dp"
+        android:layout_height="159dp"
+        android:layout_below="@+id/textSetTimer"
+        android:layout_centerHorizontal="true"
+        android:amPmTextColor="@android:color/white"
+        android:background="@drawable/backgroundspinner"
+        android:nestedScrollingEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+
+        android:timePickerMode="spinner"
+        android:visibility="visible"
+        tools:style="@android:style/Widget.Leanback.TimePicker"
+        tools:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/setTimer"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/backgroundspinner"
+        android:text="@string/save_changes"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/textChooseMode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-144dp"
+        android:background="@drawable/backgroundspinner"
+        android:popupBackground="@drawable/backgroundspinner"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textSetTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/set_time"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textChooseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:text="@string/choose_mode"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
